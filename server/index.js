@@ -14,11 +14,12 @@ const db = mysql.createConnection({
     
 
 app.post('/create',(req,res) =>{
-    const title = req.body.title
+    const productName = req.body.productName
     const price = req.body.price
-    const img = req.body.img
+    const quantity = req.body.quantity
+    const total = req.body.total
 
-    db.query('INSERT INTO cart (title, price, img) VALUES (?,?,?)',[title, price, img], (err,result) => {
+    db.query('INSERT INTO order(productName, price,quantity,total) VALUES (?,?,?,?)',[productName, price, quantity, total], (err,result) => {
          if(err) {
              console.log(err)
          }else{
