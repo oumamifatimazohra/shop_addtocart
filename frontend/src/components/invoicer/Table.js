@@ -1,0 +1,9 @@
+import React from 'react'
+
+export default function Table() {
+  return (
+    <div>
+    <div className='my-5'>this is the table</div>
+    </div>
+  )
+}

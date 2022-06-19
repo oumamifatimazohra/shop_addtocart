@@ -1,0 +1,21 @@
+.Checkout-top {
+    display: flex;
+}
+th{
+    padding: 30 px;
+}
+.checkout{
+    width: 70%;
+    padding: 30px;
+}
+.check{
+    border: solid 2px skyblue;
+    width: 400px;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px;
+   
+}
+.Button{
+    background-color: gray;
+}
